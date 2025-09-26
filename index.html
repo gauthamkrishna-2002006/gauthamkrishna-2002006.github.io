@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gautham Krishna C G's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC;
+        }
+
+        .typing-effect::after {
+            content: '|';
+            animation: blink 1s step-end infinite;
+            display: inline-block;
+        }
+
+        @keyframes blink {
+            from, to {
+                color: transparent;
+            }
+            50% {
+                color: currentColor;
+            }
+        }
+        
+        /* Custom styles for professional photo and hover effects */
+        .professional-photo {
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-card:hover .project-title {
+            transform: translateY(0);
+        }
+
+        .project-overlay {
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0;
+        }
+
+        .project-title {
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(20px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Sticky Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-lg backdrop-blur-lg bg-opacity-80 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-[#1E293B]">Gautham Krishna</a>
+            <div class="space-x-4 md:space-x-8 text-sm md:text-base">
+                <a href="#about" class="text-gray-600 hover:text-[#FB923C] transition-colors duration-200">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-[#FB923C] transition-colors duration-200">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-[#FB923C] transition-colors duration-200">Contact</a>
+                <a href="#" class="inline-block px-4 py-2 text-white bg-[#FB923C] rounded-full hover:bg-orange-500 transition-colors duration-200 shadow-md">Download Resume</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 lg:px-8">
+        
+        <!-- Home/Hero Section -->
+        <section id="home" class="py-20 md:py-32 lg:py-48 flex flex-col items-center justify-center text-center">
+            <p class="text-gray-600 text-lg md:text-xl mb-4">Hey there! I'm Gautham Krishna C G</p>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#1E293B] mb-4">
+                Full-Stack Developer & Digital Problem Solver
+            </h1>
+            <div class="text-xl md:text-2xl font-semibold text-[#FB923C] mb-8">
+                <span id="typing-text" class="typing-effect"></span>
+            </div>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#projects" class="px-8 py-4 bg-[#FB923C] text-white text-lg rounded-full hover:bg-orange-500 transition-transform transform hover:scale-105 shadow-lg font-bold">View My Work</a>
+                <a href="#contact" class="px-8 py-4 bg-transparent border-2 border-[#FB923C] text-[#FB923C] text-lg rounded-full hover:bg-[#FB923C] hover:text-white transition-colors duration-300 font-bold">Let's Build Something</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24">
+            <h2 class="text-center text-3xl md:text-4xl font-bold text-[#1E293B] mb-12">The Human Behind the Code</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-12 md:space-y-0 md:space-x-12">
+                <div class="w-full md:w-1/3 flex justify-center">
+                    <!-- Placeholder professional photo -->
+                    <img src="https://placehold.co/400x400/64748B/FFFFFF?text=Gautham+Krishna" alt="Gautham Krishna C G's professional headshot" class="rounded-3xl shadow-lg professional-photo w-64 h-64 md:w-80 md:h-80 object-cover">
+                </div>
+                <div class="w-full md:w-2/3 text-lg text-gray-600 space-y-6">
+                    <p>Hey there! I'm Gautham krishna C G– a passionate full-stack developer who loves turning wild ideas into pixel-perfect reality. Currently crushing my BTech (Class of 2028), but I've been coding since before it was cool to have "developer" in your bio.</p>
+                    <p>My superpower? Building seamless web experiences that make users go "wow, that just works!" From crafting responsive frontends with React and Vue to architecting robust backends with Python and Django, I speak fluent code in multiple dialects.</p>
+                    <p>When I'm not debugging at 2 AM (okay, maybe I am), you'll find me exploring the latest web technologies, creating digital designs in Illustrator, or helping teams bring their visions to life through clear communication and solid project management.</p>
+                    <p>I believe great software isn't just about clean code – it's about solving real problems for real people. Ready to build something amazing together?</p>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
+                <h3 class="text-2xl font-bold text-[#1E293B] mb-8">My Technical Toolbox</h3>
+                <!-- Skills Grid/Visualization -->
+                <div class="flex flex-wrap justify-center gap-6 text-xl">
+                    <span class="bg-white rounded-full px-6 py-3 shadow-md border border-gray-200">React</span>
+                    <span class="bg-white rounded-full px-6 py-3 shadow-md border border-gray-200">Vue</span>
+                    <span class="bg-white rounded-full px-6 py-3 shadow-md border border-gray-200">Python</span>
+                    <span class="bg-white rounded-full px-6 py-3 shadow-md border border-gray-200">Django</span>
+                    <span class="bg-white rounded-full px-6 py-3 shadow-md border border-gray-200">Node.js</span>
+                    <span class="bg-white rounded-full px-6 py-3 shadow-md border border-gray-200">Tailwind CSS</span>
+                    <span class="bg-white rounded-full px-6 py-3 shadow-md border border-gray-200">JavaScript</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 md:py-24 bg-gray-100">
+            <h2 class="text-center text-3xl md:text-4xl font-bold text-[#1E293B] mb-12">Things I've Built</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 Placeholder -->
+                <div class="project-card relative bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/64748B/FFFFFF?text=Project+1" alt="Placeholder image for Project 1" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#1E293B] mb-2">Project 1: [Title]</h3>
+                        <p class="text-gray-600 text-sm">[Brief description]</p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full">React</span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full">Node.js</span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full">MongoDB</span>
+                        </div>
+                        <div class="mt-6 flex space-x-4">
+                            <a href="#" class="text-sm font-bold text-[#FB923C] hover:underline">Live Demo</a>
+                            <a href="#" class="text-sm font-bold text-gray-600 hover:underline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 Placeholder -->
+                <div class="project-card relative bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/64748B/FFFFFF?text=Project+2" alt="Placeholder image for Project 2" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#1E293B] mb-2">Project 2: [Title]</h3>
+                        <p class="text-gray-600 text-sm">[Brief description]</p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full">Python</span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full">Django</span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full">PostgreSQL</span>
+                        </div>
+                        <div class="mt-6 flex space-x-4">
+                            <a href="#" class="text-sm font-bold text-[#FB923C] hover:underline">Live Demo</a>
+                            <a href="#" class="text-sm font-bold text-gray-600 hover:underline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 Placeholder -->
+                <div class="project-card relative bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105">
+                    <img src="https://placehold.co/600x400/64748B/FFFFFF?text=Project+3" alt="Placeholder image for Project 3" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#1E293B] mb-2">Project 3: [Title]</h3>
+                        <p class="text-gray-600 text-sm">[Brief description]</p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full">Vue</span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full">Tailwind CSS</span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 text-xs rounded-full">Firebase</span>
+                        </div>
+                        <div class="mt-6 flex space-x-4">
+                            <a href="#" class="text-sm font-bold text-[#FB923C] hover:underline">Live Demo</a>
+                            <a href="#" class="text-sm font-bold text-gray-600 hover:underline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24">
+            <h2 class="text-center text-3xl md:text-4xl font-bold text-[#1E293B] mb-12">Let's Create Together</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center md:items-start space-y-12 md:space-y-0 md:space-x-16">
+                <!-- Contact Form -->
+                <div class="w-full md:w-1/2 bg-white p-8 rounded-xl shadow-lg">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#FB923C] focus:ring-[#FB923C]">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#FB923C] focus:ring-[#FB923C]">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#FB923C] focus:ring-[#FB923C]"></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-6 py-3 bg-[#FB923C] text-white font-bold rounded-full hover:bg-orange-500 transition-colors duration-200">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="w-full md:w-1/3 text-center md:text-left">
+                    <p class="text-gray-600 mb-6">You can also find me on these platforms:</p>
+                    <div class="flex flex-col items-center md:items-start space-y-4">
+                        <a href="mailto:gauthamkrishnacg@gmail.com" class="text-lg font-semibold text-[#FB923C] hover:underline">gauthamkrishnacg@gmail.com</a>
+                        <a href="https://github.com/gauthamkrishna-2002006" target="_blank" class="text-lg font-semibold text-gray-800 hover:text-[#FB923C] hover:underline transition-colors duration-200">GitHub: gauthamkrishna-2002006</a>
+                        <a href="#" target="_blank" class="text-lg font-semibold text-gray-800 hover:text-[#FB923C] hover:underline transition-colors duration-200">LinkedIn: (your profile)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1E293B] text-white py-8 mt-16">
+        <div class="container mx-auto px-6 text-center text-sm text-gray-400">
+            &copy; 2024 Gautham Krishna C G. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- JavaScript for typing effect and smooth scrolling -->
+    <script>
+        const textToType = "Crafting Web Experiences That Actually Work";
+        const typingElement = document.getElementById('typing-text');
+        let i = 0;
+
+        function type() {
+            if (i < textToType.length) {
+                typingElement.textContent += textToType.charAt(i);
+                i++;
+                setTimeout(type, 80);
+            } else {
+                // Optional: Restart or clear the text after a delay
+                // setTimeout(() => {
+                //     typingElement.textContent = "";
+                //     i = 0;
+                //     type();
+                // }, 3000);
+            }
+        }
+
+        window.onload = function() {
+            type();
+        };
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
